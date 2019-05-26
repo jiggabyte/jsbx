@@ -33,8 +33,6 @@ if(window.location.pathname == '/contact'){
 }
 
 
-
-
 if(document.querySelector('#butt') == null){
     //alert("No Butt")
 } else {
@@ -45,6 +43,7 @@ if(document.querySelector('#butt') == null){
         //window.location = '/contact';
     }
 }
+
 
 
 

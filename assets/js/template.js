@@ -6,34 +6,34 @@ class Template {
     }
 
 
-    home(data){
+    home(homeData){
 
        return `
        <div id="vs">
-       <h2 id="h"> ${data.name}</h2>
+       <h2 id="h"> ${homeData.name}</h2>
        <button id="butt">Load</button>
        </div>
        
        `;
     }
 
-    services(data){
+    services(serData){
 
         return `
        <div id="vs">
-       <h2 id="h"> ${data.name}</h2>
+       <h2 id="h"> ${serData.name}</h2>
        <button id="prod">Products</button>
        </div>
        
        `;
     }
 
-    contact(datas){
+    contact(conData){
 
         return `
               
        <div id="vz">
-       <h2 id="g"> ${datas.name}</h2>
+       <h2 id="g"> ${conData.name}</h2>
        </div>
        
        

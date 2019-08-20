@@ -5,7 +5,6 @@ class Template {
 
     }
 
-
     home(homeData){
 
        return `

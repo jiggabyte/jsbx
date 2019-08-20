@@ -3,20 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>JSBX</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
     <link rel="stylesheet" href="assets/css/style.css" >
     <script type="text/javascript" src="assets/js/template.js"></script>
     <script type="text/javascript" src="assets/js/view.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-3.3.1-slim.min.js"></script>
+    <script type="text/javascript" src="assets/js/model.js"></script>
 </head>
 <body>
-<a href="/"><button>Home</button></a>
-<a href="/services"><button>Services</button></a>
-<a href="/contact"><button>Contact</button></a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">JiggaByte</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+            </li>
+
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
 
 <section id="viewer" style="width:100%;height:100%;overflow:auto;">
 
 
 
 </section>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/popper.js"></script>
+<script type="text/javascript" src="assets/js/jsbx_lib.js"></script>
+<script type="text/javascript" src="assets/js/nav.js"></script>
 <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

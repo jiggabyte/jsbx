@@ -2,21 +2,20 @@ let controller = new Controller();
 
 
 if (window.location.pathname === '/') {
-    document.querySelector("#viewer").innerHTML = controller.home();
+    controller.home();
 
 }
 
 
 if (window.location.pathname === '/service') {
-    document.querySelector("#viewer").innerHTML = controller.service();
+    controller.services();
 
 }
 
 if (window.location.pathname === '/contact') {
-    document.querySelector("#viewer").innerHTML = controller.contact();
+    controller.contactus();
 
 }
-
 
 // Add local/own library functions here
 function load_js(scripter){
@@ -38,15 +37,4 @@ function unload_js(){
 
 document.body.onclick = function () {
     load_js('assets/js/jsbx.js');
-}
-
-
-if(document.querySelector('#butt') == null){
-
-} else {
-
-    console.log(document.querySelector('#butt'))
-    document.querySelector('#butt').onclick = function(){
-      alert("Clicked Me!");
-    }
 }

@@ -1,7 +1,7 @@
 class Controller {
 
     constructor (){
-     self.view = new View();
+
     }
 
     home(){
@@ -9,24 +9,38 @@ class Controller {
             info:"Welcome to JSBX",
         };
 
-
-        return self.view.home(homeData);
+        import('./views/home.js').then(
+            (template)=> {
+                const templateData = document.querySelector("#viewer");
+                templateData.innerHTML = template.home(homeData);
+            }
+        );
     }
 
-    service(){
+    services(){
         let serData = {
             info:"Services",
         };
 
-        return self.view.service(serData);
+        import('./views/services.js').then(
+            (template)=> {
+                const templateData = document.querySelector("#viewer");
+                templateData.innerHTML = template.services(serData);
+            }
+        );
     }
 
-    contact(){
+    contactus(){
         let conData = {
             info:"Contact Us",
         };
 
-        return self.view.contact(conData);
+        import('./views/contactus.js').then(
+            (template)=> {
+                const templateData = document.querySelector("#viewer");
+                templateData.innerHTML = template.contactus(conData);
+            }
+        );
 
     }
 
